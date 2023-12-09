@@ -1,0 +1,34 @@
+﻿ "BORROW, RETURN, AND RENEWAL"
+
+The "Borrow" section states:
+
+The standard loan is 4 books for 14 days, unless the material belongs to special collections, such as:
+Books with orange dots: for in-library use only
+Course Reserves: 1 copy per loan for 24 hours
+Printed theses and dissertations: for in-library use only
+
+The "Return" section states:
+
+Books can be returned at self-check kiosks or at the library front desk where you borrowed them.
+After returning at self-check kiosks, you should print a return receipt
+Please do not leave borrowed books on library shelves without a return receipt or confirmation from a librarian
+
+The "Borrow" section states:
+
+The standard loan is 4 books for 14 days, unless the material belongs to special collections, such as:
+Books with orange dots: for in-library use only
+Course Reserves: 1 copy per loan for 24 hours
+Printed theses and dissertations: for in-library use only
+The "Return" section states:
+
+Books can be returned at self-check kiosks or at the library front desk where you borrowed them.
+After returning at self-check kiosks, you should print a return receipt
+Please do not leave borrowed books on library shelves without a return receipt or confirmation from a librarian
+
+The "Renewal" section states:
+
+Most library materials can be renewed in four ways: online, in person, by email, or by phone.
+Limit: 10-day renewal for each borrowed book
+Items that cannot be renewed are:
+Items that are on hold
+Items that are overdue

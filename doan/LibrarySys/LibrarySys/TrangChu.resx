@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="rtbNoiQuy.Text" xml:space="preserve">
+    <value> 
+                                                               "BORROW, RETURN"
+
+  The "Borrow" section states:
+
+  The standard loan are books for 30 days, unless the material belongs to special collections, such as
+	Books for in-library use only
+	
+  The "Return" section states:
+
+  Books can be returned at self-check kiosks or at the library front desk where you borrowed them.
+  After returning at self-check kiosks, you should print a return receipt
+  Please do not leave borrowed books on library shelves without a return receipt or confirmation from a librarian
+  If you don't return books on time, you will be fined 1.000 VNĐ for one book on one day
+
+  Notice: Reader must older than five year old
+  ************************************************************************************************************************************************************</value>
+  </data>
+</root>

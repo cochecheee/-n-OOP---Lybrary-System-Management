@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D664985-77EE-467C-89EF-035D1178C2AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LibrarySys</RootNamespace>
+    <AssemblyName>LibrarySys</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.3.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1586.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1586.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1358.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionLibrarian.cs" />
+    <Compile Include="ActionMember.cs" />
+    <Compile Include="AddBook.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="book.designer.cs">
+      <DependentUpon>book.dbml</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="DangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKi.Designer.cs">
+      <DependentUpon>DangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoAnDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAnDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DoAnDataSet_issue.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAnDataSet_issue.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DoAnDataSet_member.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAnDataSet_member.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DoAnDataSet_return.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAnDataSet_return.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HoatDong.cs" />
+    <Compile Include="IssueBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueBooks.Designer.cs">
+      <DependentUpon>IssueBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issuereturn.cs">
+      <DependentUpon>issuereturn.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="issuereturn.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>issuereturn.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarianGUI.Designer.cs">
+      <DependentUpon>LibrarianGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberGUI.Designer.cs">
+      <DependentUpon>MemberGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operate.cs" />
+    <Compile Include="ReturnBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnBooks.Designer.cs">
+      <DependentUpon>ReturnBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="tk.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tk.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Librarian.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="book.dbml.layout">
+      <DependentUpon>book.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="DangKi.resx">
+      <DependentUpon>DangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueBooks.resx">
+      <DependentUpon>IssueBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="book.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>book.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DoAnDataSet.xsc">
+      <DependentUpon>DoAnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DoAnDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAnDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DoAnDataSet.xss">
+      <DependentUpon>DoAnDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DoAnDataSet_issue.xsc">
+      <DependentUpon>DoAnDataSet_issue.xsd</DependentUpon>
+    </None>
+    <None Include="DoAnDataSet_issue.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAnDataSet_issue.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DoAnDataSet_issue.xss">
+      <DependentUpon>DoAnDataSet_issue.xsd</DependentUpon>
+    </None>
+    <None Include="DoAnDataSet_member.xsc">
+      <DependentUpon>DoAnDataSet_member.xsd</DependentUpon>
+    </None>
+    <None Include="DoAnDataSet_member.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAnDataSet_member.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DoAnDataSet_member.xss">
+      <DependentUpon>DoAnDataSet_member.xsd</DependentUpon>
+    </None>
+    <None Include="DoAnDataSet_return.xsc">
+      <DependentUpon>DoAnDataSet_return.xsd</DependentUpon>
+    </None>
+    <None Include="DoAnDataSet_return.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAnDataSet_return.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DoAnDataSet_return.xss">
+      <DependentUpon>DoAnDataSet_return.xsd</DependentUpon>
+    </None>
+    <None Include="issuereturn.dbml.layout">
+      <DependentUpon>issuereturn.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="LibrarianGUI.resx">
+      <DependentUpon>LibrarianGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberGUI.resx">
+      <DependentUpon>MemberGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="issuereturn.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>issuereturn.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="tk.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>tk.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tk.dbml.layout">
+      <DependentUpon>tk.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="ReturnBooks.resx">
+      <DependentUpon>ReturnBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SodoClass.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookshelf_library_icon_150961.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4105938-account-card-id-identification-identity-card-profile-user-profile_113929.ico" />
+    <None Include="Resources\addressbook_addressbook_search_librodedireccion_2818.ico" />
+    <None Include="Resources\reload.png" />
+    <None Include="Resources\settings_reload_update_icon_188616.ico" />
+    <None Include="Resources\iconlog.jpg" />
+    <None Include="Resources\Library1.jpg" />
+    <None Include="Resources\Library.jpg" />
+    <None Include="Resources\Hinh-anh-cuon-sach-mo-ra-va-chiec-la-xanh.jpg" />
+    <None Include="Resources\icon.jpg" />
+    <None Include="Resources\tuoi.png" />
+    <None Include="Resources\view book gif1.gif" />
+    <None Include="Resources\add book.gif" />
+    <None Include="Resources\issueBook.gif" />
+    <None Include="Resources\icons8-student-male-100.png" />
+    <None Include="Resources\icons8-books-50.png" />
+    <None Include="Resources\icons8-books-501.png" />
+    <None Include="Resources\addstudent.gif" />
+    <None Include="Resources\motivation1.jpg" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XuatFile\XuatFile.csproj">
+      <Project>{d72c75dc-9d74-4ae5-b094-6bc72968e1a4}</Project>
+      <Name>XuatFile</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
